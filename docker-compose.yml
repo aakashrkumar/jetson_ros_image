@@ -11,11 +11,11 @@ services:
                 USER_GID: 1000
         deploy:
             resources:
-            reservations:
-                devices:
-                    - driver: nvidia
-                      count: all # alternatively, use `count: all` for all GPUs
-                      capabilities: [gpu]
+                reservations:
+                    devices:
+                        - driver: nvidia
+                          count: all # alternatively, use `count: all` for all GPUs
+                          capabilities: [gpu]
         image: ros_humble
         container_name: ros_humble_dev
 
