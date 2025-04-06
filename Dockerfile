@@ -1,16 +1,16 @@
 FROM osrf/ros:humble-desktop-full
 
 USER root
-RUN apt-get update \
-    && apt-get install -y \
-    nano \
-    vim \
-    && rm -rf /var/lib/apt/lists/*
+# RUN apt-get update \
+#     && apt-get install -y \
+#     nano \
+#     vim \
+#     && rm -rf /var/lib/apt/lists/*
 
-RUN apt-get update \
-    && apt-get install -y \
-    ros-humble-moveit \
-    && rm -rf /var/lib/apt/lists/*
+# RUN apt-get update \
+#     && apt-get install -y \
+#     ros-humble-moveit \
+#     && rm -rf /var/lib/apt/lists/*
 
 # can be ros instead of bumrc
 ARG USERNAME=bumrc
