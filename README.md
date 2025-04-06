@@ -2,7 +2,7 @@
 
 ```bash
 docker build -t my_image .
-docker run -it --user [username] --network=host --ipc=host -v $PWD/src:/src --privileged my_image
+docker run -it --user [username] --network=host --ipc=host -v $PWD/ros_ws:/ros_ws --privileged my_image
 ```
 
 ### Troubleshooting

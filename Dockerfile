@@ -1,4 +1,4 @@
-FROM osrf/ros:humble-desktop-full
+FROM ghcr.io/sloretz/ros:humble-desktop-full
 
 USER root
 RUN apt-get update \
